@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0 0em;
+  font-size: max(1.5vw, 18px);
+  font-family: serif;
+  filter: brightness(10000%) contrast(1000%);
+  background:
+    repeating-linear-gradient(#fff, #ccc1, #fff 3px),
+    repeating-linear-gradient(to right, #fff, #ccc1, #fff 3px);
+}
+
+h1:not(#title), h3, h4, em, strong {
+  text-shadow: 0 0 1px hsl(0 0% 0.05%);
+  background:
+    repeating-linear-gradient(#fff, #0009, #fff 5px),
+    repeating-linear-gradient(to right, #fff, #0009, #fff 5px);
+  filter: brightness(200%) contrast(300%);
+}
+
+p {
+  font-weight: bold;
+  background:
+  repeating-linear-gradient(#0002, #3331, #0002 3px),
+  repeating-linear-gradient(to right, #0002, #3331, #0002 10px);
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  image-rendering: pixelated;
+}
+
+video {
+  display: block;
+  filter: brightness(0.8%);
+  opacity: .99;
+  max-width: 100%;
+  image-rendering: pixelated;
+}
+
+header {
+  display: flex;
+  margin: 1em;
+  flex-flow: row wrap;
+  gap: .5em 3em;
+  justify-content: center;
+  text-shadow: 0 0 1px hsl(0 0% 0.2%);
+
+  img {
+    width: auto;
+    height: 1.2em;
+    margin-right: .5em;
+    filter: brightness(1%);
+  }
+}
+
+@media(max-width: 800px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+}
+
+#title {
+  text-align: center;
+  font-size: 10vw;
+  animation: text-shadow 20s infinite ease-in-out;
+  span {
+    display: inline-block;
+  }
+}
+
+@keyframes text-shadow {
+  from { text-shadow: 0 0 .4em hsl(0 0% 2%) }
+  50%  { text-shadow: 0 0 .8em hsl(0 0% 2%) }
+  to   { text-shadow: 0 0 .4em hsl(0 0% 2%) }
+}
+
+section {
+  position: relative;
+  max-width: 36em;
+  margin: 0 auto;
+  padding-right: 12em;
+}
+
+@media(max-width: 800px) {
+  section {
+    max-width: none;
+    padding: 0 1em;
+  }
+}
+
+aside {
+  position: absolute;
+  right: 0;
+  width: 10em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: circle;
+  }
+}
+
+@media(max-width: 800px) {
+  aside {
+    position: static;
+  }
+  aside#precautions {
+    float: right;
+  }
+  aside#handles {
+    margin: 0 auto;
+    width: 20em;
+  }
+}
+
+#names {
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      color: #010101;
+    }
+  }
+}
+
+#hand {
+  filter: brightness(1%) grayscale(100%);
+}
+
+.dijkstra {
+  text-align: right;
+  margin-right: 1em;
+}
+
+#links {
+  max-width: 50ch;
+  margin: 0 auto;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px hsl(0 0% 0.1%);
+  a {
+    padding: .2em;
+    &:visited {
+      color: #0ff;
+    }
+  }
+}
+
+#splat {
+  display: block;
+  max-width: 300px;
+  margin: 50vh auto 20vh;
+}
+
+.splats {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+
+.splat {
+  rotate: var(--rotate);
+  transform: translateX(var(--translate)) scale(var(--scaleX), var(--scaleY));
+  transition: transform 1s var(--delay) cubic-bezier(0, 1.2, 0, 1);
+
+  & polyline {
+    transition: translate 0.3s 0.45s cubic-bezier(0.3, 0.6, 0, 1), scale 0.6s cubic-bezier(0.3, 0, 0.5, 1);
+  }
+}
+
+circle {
+  animation: pulse 30s linear infinite alternate;
+}
+
+@keyframes pulse {
+  from { scale: .5 }
+  to { scale: 2 }
+}

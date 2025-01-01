@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+  <div><img src="/img/hands.svg" alt="">HAND TOOL</div>
+  <div><img src="/img/scribble.svg" alt="">Scribble & Sketch</div>
+  <div><img src="/img/lab.svg" alt="">Laboratory-Grade Computer Science</div>
+</header>
+
+<h1 id="title"><span>Feeling is Reality</span></h1>
+
+<section>
+  <h1>What is Inkling?</h1>
+
+  <aside id="precautions">
+    <strong>Safety Precautions</strong>
+    <ul id="names">
+      <li><a href="">Alex Warth</a></li>
+      <li><a href="">Ivan Reese</a></li>
+      <li><a href="">Marcel Goethals</a></li>
+    </ul>
+    <script>
+      let n = document.querySelector("#names")
+      let c = Array.from(n.children)
+      shuffle = ()=> {
+        let child = c[Math.random()*c.length|0]
+        n.appendChild(child)
+        child.style.background = `hsl(0 0% ${Math.random()*5+0.9}%)`
+      }
+      runShuffle = ()=> {
+        shuffle()
+        setTimeout(shuffle, Math.random() * 15000|0)
+      }
+      for (let i = 0; i < 5; i++) shuffle()
+      runShuffle()
+    </script>
+  </aside>
+
+  <p>
+    the computer<br>
+    forces your thoughts<br>
+    through an aperture<br>
+    the breadth<br>
+    of a mouse cursor,<br>
+    tapping buttons one by one.<br>
+    <br>
+    Feeling is reality,<br>
+    and that is not<br>
+    how we want to feel<br>
+    when we're thinking.
+  </p>
+
+</section>
+
+<section>
+  <h1>What is Inkling?</h1>
+
+  <p>
+    <video src="/img/1.mp4" preload autoplay muted loop playsinline></video>
+    In Inkling, the pen draws freely.
+  </p>
+  <p>To erase, press two fingers to the screen, then draw.</p>
+
+  <h2>Meta Mode</h2>
+
+  <p>Tap the ink splat in the corner to enter "Meta Mode".</p>
+
+  <aside id="handles">
+    Just as in reality,<br>
+    handles take intangible qualities<br>
+    — dimension and orientation —<br>
+    and let you manipulate them with your hands.<br>
+    <img id="hand" src="/img/hand.jpg" alt="hand">
+  </aside>
+
+  <p>
+    Tap any ink stroke to add handles.
+    <video src="/img/2.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    In Meta Mode, drawing creates a Gizmo —
+    two connected handles,
+    with a special sigil at the center.
+    <video src="/img/3.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+
+  <p>
+    Handles snap together.
+    <video src="/img/4.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    Tap the sigil to impose a length constraint on the gizmo.
+    <video src="/img/5.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    Tap again to constrain both length and angle.
+    <video src="/img/6.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    And again to constrain just the angle.
+    <video src="/img/7.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    Draw a wire from one sigil to another.
+    Their lengths and angles are made equal.
+    <video src="/img/8.mp4" preload autoplay muted loop playsinline></video>
+  </p>
+
+  <p>
+    <video src="/img/9.mp4" preload autoplay muted loop playsinline></video>
+    Draw a wire from a sigil to nowhere.
+  </p>
+  <p>Draw a wire from a property to nowhere</p>
+
+  <p>
+    Tickle the value with your finger,
+    to see the gizmo react.
+  </p>
+
+  <p>
+    <video src="/img/10.mp4" preload autoplay muted loop playsinline></video>
+    Tap the pen to create a linear equation.
+  </p>
+
+  <p>
+    Tap a number.<br>
+    Light, free to change.<br>
+    Dark, not free.
+  </p>
+
+  <p>
+    <strong>
+      Start by drawing ink strokes,<br>
+      then constraints onto those strokes<br>
+      then relationships for those constraints
+    </strong>
+  </p>
+
+</section>
+<section>
+  <h1>What is Inkling?</h1>
+
+  <p>
+    A smooth progression from doodling to modelling.
+  </p>
+
+  <p>
+    <strike>"speed of thought"</strike>
+    <em>speed of feeling<em>
+  </p>
+
+  <p>
+    Feeling is reality.<br>
+    Inkling doesn't feel like anything.
+  </p>
+
+  <ul>
+    <li>With Both Hands</li>
+    <li>Many Tools</li>
+    <li>Shared</li>
+  </ul>
+
+
+  <h3>No Hallucination of the Mind's Eye</h3>
+  <ul>
+    <li>No Coordinates</li>
+    <li>No Absolutes</li>
+    <li>No Algebra</li>
+  </ul>
+
+</section>
+
+<section>
+  <h1>Feeling is Reality</h1>
+
+  <p>Do YOU love the computer?</p>
+  <p>Don't be one of them!</p>
+  <p>The computer is not the point.</p>
+  <p>The code is not the point</p>
+  <p>These are tools for thinking.</p>
+
+  <h2>An inkling is better than thinking.</h2>
+
+  <p>The <em>feeling</em>.</p>
+  <p>The feeling is real.</p>
+  <p>Feeling is Reality.</p>
+</section>
+
+<h1 class="dijkstra">FOR THE LOVE OF DIJKSTRA</h1>
+<h1 class="dijkstra">WHAT IS INKLING?</h1>
+
+
+<div id="links">
+  <a href="https://github.com/inkandswitch/inkling">Study the Inkling source</a>
+</div>
+
+</em>
+</em>
+
+<svg id="splat" viewBox="0 0 100 100"></svg>
+
+<script>
+  const radius = 20
+  const padding = 30
+
+  const SVG = {}
+  const NS = "http://www.w3.org/2000/svg"
+  SVG.add = (type, parent, attributes)=> parent.appendChild(SVG.update(document.createElementNS(NS, type), attributes))
+  SVG.points = (...positions) => positions.flat().map(positionToPointsString).join(" ")
+  const positionToPointsString = (p) => p.x + " " + p.y
+  SVG.update = (elm, attributes) => {
+    Object.entries(attributes).forEach(([key, value]) => {
+      const boolish = typeof value === "boolean" || value === null || value === undefined
+      if (boolish) {
+        value ? elm.setAttribute(key, "") : elm.removeAttribute(key)
+      } else {
+        elm.setAttribute(key, "" + value)
+      }
+    })
+    return elm
+  }
+
+  const Vec = (x = 0, y = 0) => ({ x, y })
+  Vec.polar = (angle, length) => Vec(length * Math.cos(angle), length * Math.sin(angle))
+
+  const TAU = Math.PI * 2
+  const clip = (v, min = 0, max = 1) => Math.max(min, Math.min(v, max))
+  const lerpN = (input, outputMin = 0, outputMax = 1, doClip = false) => {
+    let output = input * (outputMax - outputMin) + outputMin
+    if (doClip) output = clip(output, outputMin, outputMax)
+    return output
+  }
+  const rand = (min = -1, max = 1) => lerpN(Math.random(), min, max)
+  const randInt = (min, max) => Math.round(rand(min, max))
+
+  function randomAngles() {
+    const angles = []
+    for (let i = 0; i < rand(5, 8); i++) angles.push(rand(0, 360))
+    return angles
+  }
+
+  function randomSplat(angle) {
+    const ran = rand(0, 1)
+    const curve = ran ** 6
+    return {
+      delay: ran * 0.17,
+      translate: 12 / lerpN(curve, 1, 0.5) ** 2,
+      rotate: curve < 0.1 ? rand(0, 360) : angle,
+      squish: rand(0, 0.7) * curve,
+      flip: rand() < 0 ? "normal" : "reverse"
+    }
+  }
+
+  const splats = []
+  const root = document.querySelector("#splat")
+  const element = SVG.add("g", root, {
+    transform: "translate(50 50)"
+  })
+  const splatsElm = SVG.add("g", element, {
+    class: "splats"
+  })
+
+  let angles = randomAngles()
+
+  for (let i = 0; i < 50; i++) {
+    const points = []
+    const steps = 5
+    for (let s = 0; s < steps; s++) {
+      const a = (s / steps) * TAU
+      const d = rand(0, 4)
+      points.push(Vec.polar(a, d))
+    }
+    points[steps] = points[0]
+    const splat = {
+      elm: SVG.add("g", splatsElm, {
+        class: "splat"
+      }),
+      ...randomSplat(angles[randInt(0, angles.length - 1)])
+    }
+    splats.push(splat)
+    SVG.add("polyline", splat.elm, { points: SVG.points(points) })
+  }
+
+  SVG.add("circle", element, { r: 3 })
+
+  const resplat = ()=> {
+    angles = randomAngles()
+    splats.forEach(splat => {
+      const s = randomSplat(angles[randInt(0, angles.length - 1)])
+      splat.translate = s.translate
+      splat.rotate = s.rotate
+      splat.squish = s.squish
+      SVG.update(splat.elm, {
+        style: `
+            --delay: ${splat.delay}s;
+            --translate: ${splat.translate}px;
+            --rotate: ${splat.rotate}deg;
+            --scaleX: ${1 + splat.squish};
+            --scaleY: ${1 - splat.squish};
+            --flip: ${splat.flip};
+          `
+      })
+    })
+
+    setTimeout(resplat, Math.random() * 1000 |0)
+  }
+
+  resplat()
+
+</script>
+
+</body>
+</html>
